@@ -3,7 +3,7 @@
 
 
 def pascal_triangle(n):
-    """Returns a list of lists of integers 
+    """Returns a list of lists of integers
     representing the Pascal’s triangle of n:
     """
 
@@ -21,7 +21,8 @@ def pascal_triangle(n):
                     """ the first column is always set to 1 """
                     triangle[i].append(1)
                 else:
-                    triangle[i].append(triangle[i-1][col] + triangle[i-1][col-1])
+                    triangle[i].append(triangle[i-1][col]
+                    + triangle[i-1][col-1])
             elif(col == i):
                 """ the diagonal is always set to 1 """
                 triangle[i].append(1)
