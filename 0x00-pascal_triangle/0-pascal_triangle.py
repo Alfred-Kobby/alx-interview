@@ -21,7 +21,7 @@ def pascal_triangle(n):
                     triangle[i].append(1)
                 else:
                     triangle[i].append(triangle[i-1][col]
-                                                    + triangle[i-1][col-1])
+                                    + triangle[i-1][col-1])
             elif(col == i):
                 """ the diagonal is always set to 1 """
                 triangle[i].append(1)
